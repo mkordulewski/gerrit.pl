@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^((.*)\.)?(gerrit\.pl)$ [NC]
+RewriteRule ^ https://www.gerritcodereview.com/ [R=302,L,NE]
